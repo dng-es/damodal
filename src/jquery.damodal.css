@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+#modal-window {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	z-index: 1098;
+	background-color: #000;
+	overflow: hidden;
+}
+#modal-window-int{
+	position: absolute;
+	background-color: #FFF;
+	padding: 0px 10px 10px 10px;
+	z-index: 1099;
+	border: 1px solid #333;
+	-moz-border-radius:8px 8px 8px 8px;
+	-moz-box-shadow:0 4px 18px #000;
+	display: none;
+	font-size: 12px;
+	width: 300px;
+	color: #666;
+}
+.modal-content { display: none;}
+.modal-close-button{
+	background: url(../images/close_off.gif) no-repeat;
+	display: inline-block; 
+	float: right; 
+	margin-top: 3px;
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+}
+.modal-close-button:hover{
+	background: url(../images/close.gif) no-repeat;
+}
