@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-#modal-window {
+#damodal-window {
 	position:absolute;
 	top: 0px;
 	left: 0px;
@@ -9,7 +9,7 @@
 	background-color: #000;
 	overflow: hidden;
 }
-#modal-window-int{
+#damodal-window-int{
 	position: absolute;
 	background-color: #FFF;
 	padding: 0px 10px 10px 10px;
@@ -17,8 +17,8 @@
 	display: none;
 	width: 300px;
 }
-.modal-content { display: none;}
-.modal-close-button{
+.damodal-content { display: none;}
+.damodal-close-button{
 	background: url(../images/close_off.gif) no-repeat;
 	display: inline-block; 
 	float: right; 
@@ -27,6 +27,6 @@
 	width: 24px;
 	height: 24px;
 }
-.modal-close-button:hover{
+.damodal-close-button:hover{
 	background: url(../images/close.gif) no-repeat;
 }
