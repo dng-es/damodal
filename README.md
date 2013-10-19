@@ -1,7 +1,7 @@
 damodal
 =============
 
-Modal window jQuery plugin
+Modal windows. jQuery plugin.
 
 
 USAGE
@@ -15,7 +15,7 @@ USAGE
 <body>
   <a href="#" class="abrir-modal" title="damodal1">Open modal</a>
   <div id="damodal1" class="modal-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada urna vitae mi tempor elementum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
 </body>
 </html>
