@@ -1,7 +1,7 @@
 damodal
 =============
 
-Modal windows. jQuery plugin.
+jQuery plugin, modal windows.
 
 
 USAGE
