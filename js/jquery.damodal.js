@@ -1,4 +1,11 @@
-// JavaScript Document
+/*!
+ * Da modal v1.0
+ *
+ * @name     damodal
+ * @author   David Noguera Gutierrez
+ * @date 	 2012-6-02
+ * @license	 Released under the MIT license
+ */
 $(document).ready(function(){
 	  var capaTrans = $('<div id="damodal-window"></div>');
 	  var capaModal = $('<div id="damodal-window-int"><div class="damodal-close damodal-close-button" title="Cerrar"></div><div id="damodal-content"></div></div>');
