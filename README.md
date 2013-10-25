@@ -20,3 +20,5 @@ USAGE
 </body>
 </html>
 ```
+
+<a href="http://dng-es.github.io/damodal" target="_blank">More info</a>
