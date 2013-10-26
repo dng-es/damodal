@@ -14,28 +14,25 @@
 	}
 	jQuery.extend(configuration, options);
 
+	//create divs
 	if(document.getElementById('damodal-window')===null){
-		var capaTrans = $('<div id="damodal-window"></div>');
-		var capaModal = $('<div id="damodal-window-int"><div class="damodal-close damodal-close-button" title="Cerrar"></div><div id="damodal-content"></div></div>');
-		capaTrans.appendTo(document.body);
-		capaModal.appendTo(document.body);
+		var divTrans = $('<div id="damodal-window"></div>');
+		var divModal = $('<div id="damodal-window-int"><div class="damodal-close damodal-close-button"></div><div id="damodal-content"></div></div>');
+		divTrans.appendTo(document.body);
+		divModal.appendTo(document.body);
 	}
 
 	this.each(function(){
-		var e_trigger, idPalette, idInfo, colorsPalette, daPicker,daPickerImg;
+		var e_trigger = $(this);		
 
-		e_trigger = $(this);		
-
-
-		/*e_trigger click event*/
 		e_trigger.click(function(e){
 			e.preventDefault();
-			var contenedor = $(this).attr("data-damodal");
-			contenedor = contenedor.replace(/[ .]/gi,"-");
-		    var lanzador = $('#' + contenedor);
-		    $("#damodal-window-int").data("ventana", lanzador);
-		    lanzador.css({"display": "block"});
-		    $("#damodal-content").after(lanzador);
+			var container = $(this).attr("data-damodal");
+			container = container.replace(/[ .]/gi,"-");
+		    var content = $('#' + container);
+		    $("#damodal-window-int").data("ventana", content);
+		    content.css({"display": "block"});
+		    $("#damodal-content").after(content);
 		    $("#damodal-window").css({width: $(document).width(), height: $(document).height(),opacity: 0.8}).fadeIn("fast");
 		    $("#damodal-window-int").fadeIn("fast").css({
 					"top": ($(document).height() - $(window).height()) + ($(window).height() * 0.33),
@@ -46,20 +43,19 @@
 					"margin-left": - $("#damodal-window-int").width()/2
 				});
 		});
-	/*Evento click de la clase damodal-close*/
-	$(".damodal-close").click(function(e){
-		e.preventDefault();
-		var windowRemove = $("#damodal-window-int").data("ventana");
-		$("#damodal-window").fadeOut(600);
-		$("#damodal-window-int").slideUp(400, function()
-		  { windowRemove.css({"display" : "none"});}
-		);
-	});
-	
-	/*Evento resize de la ventana*/
-	$(window).resize(function() {
-		$("#damodal-window").css({width: $(document).width(), height: $(document).height(),opacity: 0.8});		
-	});  
+
+		$(".damodal-close").click(function(e){
+			e.preventDefault();
+			var windowRemove = $("#damodal-window-int").data("ventana");
+			$("#damodal-window").fadeOut(600);
+			$("#damodal-window-int").slideUp(400, function()
+			  { windowRemove.css({"display" : "none"});}
+			);
+		});
+		
+		$(window).resize(function() {
+			$("#damodal-window").css({width: $(document).width(), height: $(document).height(),opacity: 0.8});		
+		});  
 	});
 	return this;  
 };
