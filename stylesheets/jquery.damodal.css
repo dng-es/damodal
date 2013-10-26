@@ -9,23 +9,25 @@
 	background-color: #000;
 	overflow: hidden;
 }
-#damodal-window-int{
-	position: absolute;
+#damodal-window-int{	
 	background-color: #FFF;
-	padding: 0px 10px 10px 10px;
-	z-index: 1099;
+	border-radius: 4px;
 	display: none;
-	width: 300px;
+	padding: 0px 10px 10px 10px;
+	position: absolute;
+	z-index: 1099;	
 }
 .damodal-content { display: none;}
 .damodal-close-button{
 	background: url(../images/close_off.gif) no-repeat;
 	display: inline-block; 
-	float: right; 
 	margin-top: 3px;
 	cursor: pointer;
 	width: 24px;
 	height: 24px;
+	position: absolute;
+	top:3px;
+	right:4px;
 }
 .damodal-close-button:hover{
 	background: url(../images/close.gif) no-repeat;
