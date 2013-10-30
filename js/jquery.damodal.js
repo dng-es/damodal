@@ -45,11 +45,10 @@
 			var container = $(this).attr("data-damodal");
 			container = container.replace(/[ .]/gi,"-");
 		    var content = $('#' + container);
-		    $("#damodal-window-int").data("ventana", content);
 		    content.css({"display": "block"});
 		    $("#damodal-content").after(content);
 		    $("#damodal-window").css({width: $(document).width(), height: $(document).height(),opacity: 0.8}).fadeIn("fast");
-		    $("#damodal-window-int").fadeIn("fast").css({
+		    $("#damodal-window-int").data("ventana", content).fadeIn("fast").css({
 					"display" : "block",
 					"left" : "50%",
 					"position" : "fixed",
