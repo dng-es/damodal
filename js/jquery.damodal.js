@@ -20,7 +20,21 @@
 		var divModal = $('<div id="damodal-window-int"><div class="damodal-close damodal-close-button"></div><div id="damodal-content"></div></div>');
 		divTrans.appendTo(document.body);
 		divModal.appendTo(document.body);
-		$("#damodal-window-int").css({"display" : "none"});
+		$("#damodal-window").css({
+			"display" : "none",
+			"left" : "0px",
+			"overflow" : "hidden",
+			"position" : "absolute",
+			"top" : "0px",
+			"z-index" : "1098"
+		});
+		$("#damodal-window-int").css({
+			"display" : "none",
+			"z-index" : "1099"
+		});
+		$(".damodal-content").css({
+			"display" : "none"
+		});
 	}
 
 	this.each(function(){
