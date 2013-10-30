@@ -20,6 +20,7 @@
 		var divModal = $('<div id="damodal-window-int"><div class="damodal-close damodal-close-button"></div><div id="damodal-content"></div></div>');
 		divTrans.appendTo(document.body);
 		divModal.appendTo(document.body);
+		$("#damodal-window-int").css({"display" : "none"});
 	}
 
 	this.each(function(){
