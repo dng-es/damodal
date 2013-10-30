@@ -10,7 +10,7 @@
 }
 .damodal-content {}
 .damodal-close-button{
-	background-image: url(../images/close.gif);
+	background-image: url(../images/close.png);
 	background-position: -24px 0px;
 	background-repeat:  no-repeat;
 	cursor: pointer;
