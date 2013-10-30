@@ -8,7 +8,7 @@
 	border-radius: 4px;
 	padding: 0px 10px 10px 10px;
 }
-.damodal-content { display: none;}
+.damodal-content {}
 .damodal-close-button{
 	background-image: url(../images/close.gif);
 	background-position: -24px 0px;
