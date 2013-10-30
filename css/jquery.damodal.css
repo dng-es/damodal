@@ -2,18 +2,11 @@
 /* CSS Document */
 #damodal-window {
 	background-color: #000;
-	display: none;
-	left: 0px;
-	overflow: hidden;
-	position:absolute;
-	top: 0px;
-	z-index: 1098;
 }
 #damodal-window-int{	
 	background-color: #FFF;
 	border-radius: 4px;
 	padding: 0px 10px 10px 10px;
-	z-index: 1099;	
 }
 .damodal-content { display: none;}
 .damodal-close-button{
