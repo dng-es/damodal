@@ -1,10 +1,10 @@
 /*!
- * Da modal v1.1
+ * Da modal v1.1.2
  *
  * @name     damodal
  * @author   David Noguera Gutierrez
- * @date 	 2012-6-02
- * @license	 Released under the MIT license
+ * @date     2013-10-30
+ * @license  Released under the MIT license
  */
 (function($) {
  jQuery.fn.damodal = function(options) {
@@ -35,9 +35,10 @@
 		    $("#damodal-content").after(content);
 		    $("#damodal-window").css({width: $(document).width(), height: $(document).height(),opacity: 0.8}).fadeIn("fast");
 		    $("#damodal-window-int").fadeIn("fast").css({
-					"top": $(window).height() * 0.33,
-					"left": "50%",
-					"display": "block",
+					"display" : "block",
+					"left" : "50%",
+					"position" : "fixed",
+					"top" : $(window).height() * 0.33,
 					"width" : configuration.modalWidth
 				}).css({
 					"margin-left": - $("#damodal-window-int").width()/2
