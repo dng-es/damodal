@@ -48,7 +48,7 @@
 		    content.css({"display": "block"});
 		    $("#damodal-content").after(content);
 		    $("#damodal-window").css({width: $(document).width(), height: $(document).height(),opacity: 0.8}).fadeIn("fast");
-		    $("#damodal-window-int").data("ventana", content).fadeIn("fast").css({
+		    $("#damodal-window-int").data("damodalText", content).fadeIn("fast").css({
 					"display" : "block",
 					"left" : "50%",
 					"position" : "fixed",
@@ -61,7 +61,7 @@
 
 		$(".damodal-close").click(function(e){
 			e.preventDefault();
-			var windowRemove = $("#damodal-window-int").data("ventana");
+			var windowRemove = $("#damodal-window-int").data("damodalText");
 			$("#damodal-window").fadeOut(600);
 			$("#damodal-window-int").slideUp(400, function()
 			  { windowRemove.css({"display" : "none"});}
