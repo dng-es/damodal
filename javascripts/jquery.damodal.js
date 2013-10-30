@@ -35,7 +35,7 @@
 		    $("#damodal-content").after(content);
 		    $("#damodal-window").css({width: $(document).width(), height: $(document).height(),opacity: 0.8}).fadeIn("fast");
 		    $("#damodal-window-int").fadeIn("fast").css({
-					"top": ($(document).height() - $(window).height()) + ($(window).height() * 0.33),
+					"top": $(window).height() * 0.33,
 					"left": "50%",
 					"display": "block",
 					"width" : configuration.modalWidth
