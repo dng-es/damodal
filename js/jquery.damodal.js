@@ -35,10 +35,10 @@
 		    $("#damodal-content").after(content);
 		    $("#damodal-window").css({width: $(document).width(), height: $(document).height(),opacity: 0.8}).fadeIn("fast");
 		    $("#damodal-window-int").fadeIn("fast").css({
-					"display": "block",
-					"left": "50%",
+					"display" : "block",
+					"left" : "50%",
 					"position" : "fixed",
-					"top": $(window).height() * 0.33,
+					"top" : $(window).height() * 0.33,
 					"width" : configuration.modalWidth
 				}).css({
 					"margin-left": - $("#damodal-window-int").width()/2
